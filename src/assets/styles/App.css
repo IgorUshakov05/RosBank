@@ -1,0 +1,340 @@
+body,
+html {
+  margin: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+/* #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.screen {
+    background-color: red;
+    padding: 37px 71px; 
+} */
+
+header {
+  padding: 70px 70px 10px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blocks {
+  display: flex;
+  padding: 10px 70px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blocks > div {
+  width: 49%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.time {
+  text-align: right;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 15px;
+  text-align: right;
+  color: #000;
+}
+.dateTimeParent {
+  padding-right: 70px;
+  margin-top: 40px;
+}
+
+.normalHeader {
+  justify-content: flex-start;
+}
+
+.itemMethonOfCurrency {
+  width: 100%;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 131%;
+  text-align: center;
+  color: #000;
+  justify-content: center !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.itemMethonOfCurrency.card {
+  position: relative; /* Добавляем позиционирование для псевдоэлемента */
+  overflow: hidden; /* Скрытие части псевдоэлемента, который выезжает */
+}
+
+.itemMethonOfCurrency.card::before {
+  content: "Взять талон";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0555b5 !important;
+  width: 0%; /* Начальная ширина элемента */
+  transition: width 0.3s ease; /* Плавная анимация изменения ширины */
+  z-index: 1; /* Помещаем псевдоэлемент за основной контент */
+}
+
+.itemMethonOfCurrency.card.active::before {
+  opacity: 1;
+  width: 100%; /* Увеличиваем ширину до 100% при активации */
+}
+
+
+.backLinkText {
+  border: 1px solid rgba(5, 85, 181, 0.53);
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #0555b5;
+}
+
+.textOfHeader {
+  border: 1px solid #0555b5;
+  border-radius: 27px;
+  padding: 10px 22px;
+  font-weight: 450;
+  background-color: white;
+  font-size: 19px;
+  margin-left: 30px;
+  margin-top: 12px;
+  line-height: 131%;
+  color: #000;
+}
+.currencyBlockNow {
+  width: fit-content;
+  border-radius: 27px;
+  padding: 25px;
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 19px 0 #dce6ff;
+}
+
+.priceCurrent {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.BuyAndSalle {
+  width: 35%;
+}
+
+.textSalleAndPrice {
+  font-weight: 550;
+  font-size: 25px;
+  line-height: 131%;
+  color: #000;
+}
+
+.textSalleAndBuy {
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 147%;
+  color: #000;
+}
+
+.titleCurrency > p {
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 100%;
+  color: #000;
+}
+
+.titleCurrency {
+  margin-left: 10px;
+}
+
+.topInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.imgCurrency {
+  width: 52px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.titleCurrency {
+  font-weight: 450;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  border-radius: 27px;
+  margin: auto;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 4px 19px 0 #dce6ff;
+  background: #fff;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoOfSelect {
+  padding: 26px 0 26px 26px;
+  width: 50%;
+}
+
+.selectPicItem {
+  width: 180px;
+}
+
+.titleVariant {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 131%;
+  color: #000;
+}
+
+.allCurrency {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoOfSelect > p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 147%;
+  margin-top: 20px;
+  color: #000;
+}
+
+.titleCours {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 3px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.yourTalonNumber {
+font-weight: 550;
+font-size: 75px;
+margin-top: 20px;
+line-height: 94%;
+text-align: center;
+color: #00234d;
+}
+
+.currencyItem {
+  margin-right: 20px;
+  display: flex;
+  align-items: stretch;
+}
+.titleCours > h1 {
+  font-weight: 500;
+  font-size: 14px;
+}
+.titleCours > h2 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.currencyItem > img {
+  border-radius: 33px;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 75% !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+}
+.currencyBlockNow:not(:nth-child(1)) {
+  margin-left: 20px !important;
+}
+
+.talonInfo {
+    display: flex;
+    width: 40%;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.active {
+  color: white;
+}
+.TalonNumber {
+font-weight: 450;
+font-size: 20px;
+line-height: 131%;
+text-align: center;
+color: #000;
+}
+.container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  width: 30%;
+}
+.container > img{
+  width: fit-content;
+  height: 100%;
+  right: 0;
+  position: relative;
+}
+
+.default {
+  color: white;
+   background-color: #0555b5;
+}
+.w-70 {
+  padding: 14px;
+  display: block;
+  border-radius:16px;
+}
+
+.blockBack {
+  margin-top: 100px;
+  width: 70%;
+}
+
+.line {
+  background: #e40038;
+  border-radius: 18px;
+width: 100%;
+margin-top: 20px;
+height: 6px;
+}
+
+.toMain {
+  font-size: 20px;
+  line-height: 120%;
+  display: block;
+}
+
+.toMain:nth-child(2) {
+  font-size: 15px;
+}

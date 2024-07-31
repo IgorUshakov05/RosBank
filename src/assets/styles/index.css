@@ -1,0 +1,66 @@
+/* @font-face {
+  font-family: 'Miller';
+  src: url('../fonts/miller/._Muller-Trial-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Miller';
+  src: url('../fonts/miller/._Muller-Trial-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller/Fontfabric - MullerBoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller/Fontfabric - MullerLight.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller/Fontfabric - MullerMediumItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller/Fontfabric - MullerRegular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller/Fontfabric - MullerLight.otf") format("opentype");
+  font-weight: 450;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/muller/Fontfabric\ -\ MullerMedium.otf") format("opentype");
+  font-weight: 550;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Muller";
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
